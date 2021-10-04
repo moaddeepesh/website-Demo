@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>    
+  (function(win, export_obj) {
+      win['TeaAnalyticsObject'] = export_obj;
+      if (!win[export_obj]) {
+          function _collect() {
+              _collect.q.push(arguments);
+          }
+          _collect.q = _collect.q || [];
+          win[export_obj] = _collect;            
+      }
+      win[export_obj].l = +new Date();
+  })(window, 'collectEvent');
+  </script>
+  <script async src=XX></script>
+  <script>
+      //config for dataranger sdk
+      window.collectEvent('init', { app_id:XX, channel: XX, enable_ab_test: true, enable_ab_visual: true, autotrack: true, log: "true"});
+      window.collectEvent('start') 
+  </script>
     <!-- Google Tag Manager -->
     <script>
       window.dataLayer = window.dataLayer || [];
