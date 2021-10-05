@@ -41,8 +41,8 @@ class PromoBannerV1 extends React.Component{
   onClick(){
     //report data to dataranger
     console.log("sending data")
-    //window.collectEvent('click_promotion_register') //report promotion successful
-    window.collectEvent('click_hotdeals_register')
+    window.collectEvent('click_promotion_register') //report promotion successful
+    //window.collectEvent('click_hotdeals_register')
     this.setState({
       register: true
     })
