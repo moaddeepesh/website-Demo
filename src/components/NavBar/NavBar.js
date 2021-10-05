@@ -27,6 +27,7 @@ class NavBar extends React.Component{
   showDropdown(e){
     this.setState({
       show: true
+      window.collectEvent('click_dropdown_open')
     })
   }
   hideDropdown(e){
