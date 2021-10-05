@@ -36,7 +36,8 @@ class FormV2 extends React.Component{
     event.target.reset()
     //sending data to data tester
     console.log('sending data')
-    window.collectEvent('click_register_button') //sending data of register click
+    //window.collectEvent('click_register_button') //sending data of register click
+    window.collectEvent('click_register_button1')
     window.collectEvent('register_time_taken',{time: newTime}) //sending data of time taken to register in seconds
     window.collectEvent('config', { 
       user_unique_id: email, //sending data of UUID
