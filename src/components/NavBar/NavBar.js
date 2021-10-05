@@ -27,7 +27,6 @@ class NavBar extends React.Component{
   showDropdown(e){
     this.setState({
       show: true
-      window.collectEvent('click_dropdown_open')
     })
   }
   hideDropdown(e){
@@ -41,7 +40,6 @@ class NavBar extends React.Component{
       <div className={this.setTheme(this.props.bg)} >
       <Navbar collapseOnSelect expand="lg" bg={this.props.bg} variant={this.props.bg} className="body">
         <Navbar.Brand href="/home">Demo Website</Navbar.Brand>
-        
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
