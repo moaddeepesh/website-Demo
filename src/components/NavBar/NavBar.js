@@ -41,7 +41,7 @@ class NavBar extends React.Component{
       <div className={this.setTheme(this.props.bg)} >
       <Navbar collapseOnSelect expand="lg" bg={this.props.bg} variant={this.props.bg} className="body">
         <Navbar.Brand href="/home">Demo Website</Navbar.Brand>
-        window.collectEvent('click_home_button')
+        
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
